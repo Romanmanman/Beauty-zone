@@ -1,0 +1,37 @@
+.procedure-card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  height: 456px;
+  padding-bottom: 32px;
+  padding-right: 77px;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 120px;
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--color-primary-white);
+    max-width: 150px;
+    text-align: center;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 120px;
+  }
+}

@@ -1,0 +1,11 @@
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--color-primary-dark);
+  margin-bottom: 48px;
+  &--centered {
+    text-align: center;
+  }
+}

@@ -1,0 +1,63 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 32px 100px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+  &__nav-links {
+    display: flex;
+    gap: 56px;
+  }
+  &__nav-icons {
+    display: flex;
+    gap: 32px;
+  }
+  &__link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.2s, font-weight 0.2s;
+    &:hover {
+      color: var(--color-primary-blue);
+      font-weight: 700;
+    }
+    &--about-us {
+      width: 71px;
+    }
+    &--adventages {
+      width: 76px;
+    }
+    &--procedures {
+      width: 145px;
+    }
+    &--contact {
+      width: 78px;
+    }
+  }
+  &__logo {
+    flex-shrink: 0;
+  }
+  &__logo-img {
+    width: 84px;
+    height: 42px;
+  }
+  &__icon-link {
+    fill: var(--color-primary-dark);
+    transition: filter 0.2s;
+    &:hover {
+      filter: drop-shadow(0 0 1px var(--color-primary-blue));
+    }
+  }
+}

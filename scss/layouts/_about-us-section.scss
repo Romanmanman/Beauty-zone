@@ -1,0 +1,107 @@
+.about-us-section {
+  padding-bottom: 176px;
+  &__container {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+  }
+  &__text {
+    padding-top: 40px;
+    max-width: 710px;
+  }
+  &__text &__title {
+    margin-bottom: 40px;
+  }
+  &__title {
+    max-width: 530px;
+  }
+  &__description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7;
+    color: var(--color-brand-dark);
+    margin-bottom: 40px;
+  }
+
+  &__images {
+    height: 695px;
+    position: relative;
+    display: flex;
+    max-width: 500px;
+    min-width: 330px;
+    gap: 40px;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  &__image {
+    border-radius: 50%;
+  }
+  &__before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  &__after {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  &__big-star {
+    fill: var(--color-primary-dark);
+    position: absolute;
+    top: 295px;
+    right: 15px;
+    animation-name: pulsar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  &__middle-star {
+    fill: var(--color-primary-blue);
+    position: absolute;
+    transform: rotate(-30deg);
+    top: 25px;
+    right: 0;
+    animation-name: revers-pulsar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  &__small-star {
+    fill: var(--color-secondary-grey);
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 350px;
+    right: 295px;
+    animation-name: pulsar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pulsar {
+    0% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.5);
+    }
+  }
+  @keyframes revers-pulsar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+.shadow {
+  filter: drop-shadow(0 0 6px var(--color-secondary-yellow));
+}

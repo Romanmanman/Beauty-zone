@@ -1,0 +1,17 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/texts';
+@import './utils/utils';
+
+@import './base';
+
+@import './layouts/about-us-section';
+@import './layouts/adventages-section';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/procedures-section';
+
+@import './components/buttons';
+@import './components/procedure-card';
+@import './components/section-title';
+@import './components/pagination';
