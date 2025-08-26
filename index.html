@@ -80,7 +80,10 @@
           <div class="hero-section__container">
             <p class="hero-section__service-type">Косметологічна клініка</p>
             <h1 class="hero-section__title">Beauty Zone</h1>
-            <button class="button hero-section__button" type="button">
+            <button
+              class="button hero-section__button open-modal-button"
+              type="button"
+            >
               Замовити дзвінок
             </button>
             <p class="hero-section__description">
@@ -289,14 +292,14 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <form class="form">
+            <form class="form contact-section__form">
               <h3 class="form__title">
                 Запишіться <span class="text-brand">безкоштовно</span> та
                 отримайте подарунок
               </h3>
               <label class="visually-hidden" for="name">Ім'я:</label>
               <input
-                class="form__input"
+                class="form__input contact-section__input"
                 type="text"
                 id="name"
                 name="name"
@@ -305,7 +308,7 @@
               />
               <label class="visually-hidden" for="phone">Телефон:</label>
               <input
-                class="form__input"
+                class="form__input contact-section__input"
                 type="tel"
                 id="phone"
                 name="phone"
@@ -316,7 +319,7 @@
                 >Eлектронна пошта:</label
               >
               <input
-                class="form__input"
+                class="form__input contact-section__input"
                 type="email"
                 id="email"
                 name="email"
@@ -415,7 +418,54 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__close-button close-modal-button" type="button">
+          <img src="./images/modal-close-button.svg" alt="Close button" />
+        </button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <form class="form">
+          <h3 class="form__title">
+            Запишіться <span class="text-brand">безкоштовно</span> та отримайте
+            подарунок
+          </h3>
+          <label class="visually-hidden" for="name">Ім'я:</label>
+          <input
+            class="form__input modal__input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ваше ім'я та прізвище"
+            required
+          />
+          <label class="visually-hidden" for="phone">Телефон:</label>
+          <input
+            class="form__input modal__input"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Ваш номер телефону"
+            required
+          />
+          <label class="visually-hidden" for="email">Eлектронна пошта:</label>
+          <input
+            class="form__input modal__input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ваша електронна пошта"
+            required
+          />
+          <button class="button form__button" type="submit">
+            Записатись безкоштовно
+          </button>
+          <p class="form__agreement">Натискаючи на кнопку я погоджуюсь</p>
+          <a class="form__agreement" href="#">з політикою конфіденційності</a>
+        </form>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

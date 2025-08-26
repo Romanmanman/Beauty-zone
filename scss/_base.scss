@@ -13,6 +13,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position-y: 1320px;
+  &.is-open {
+    overflow: hidden;
+  }
 }
 address {
   font-style: normal;
