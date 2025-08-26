@@ -278,100 +278,141 @@
       </section>
       <section class="contact-section" id="contact-section">
         <div class="container">
-          <h2>Як нас <span>знайти</span></h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4273.420232706815!2d30.513263639738106!3d50.44127066383212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1755716720957!5m2!1sru!2sua"
-            width="600"
-            height="450"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <div>
-            <h3>Запишіться <span>безкоштовно</span> та отримайте подарунок</h3>
-            <form>
-              <label for="name">Ім'я:</label>
+          <h2 class="section-title section-title--centered">
+            Як нас <span class="text-brand">знайти</span>
+          </h2>
+          <div class="contact-section__container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4273.420232706815!2d30.513263639738106!3d50.44127066383212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1755716720957!5m2!1sru!2sua"
+              class="contact-section__map"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <form class="form">
+              <h3 class="form__title">
+                Запишіться <span class="text-brand">безкоштовно</span> та
+                отримайте подарунок
+              </h3>
+              <label class="visually-hidden" for="name">Ім'я:</label>
               <input
+                class="form__input"
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Ваше ім'я та прізвище"
                 required
               />
-              <label for="phone">Телефон:</label>
+              <label class="visually-hidden" for="phone">Телефон:</label>
               <input
+                class="form__input"
                 type="tel"
                 id="phone"
                 name="phone"
                 placeholder="Ваш номер телефону"
                 required
               />
-              <label for="email">Eлектронна пошта:</label>
+              <label class="visually-hidden" for="email"
+                >Eлектронна пошта:</label
+              >
               <input
+                class="form__input"
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Ваша електронна пошта"
                 required
               />
-              <button class="button" type="submit">
+              <button class="button form__button" type="submit">
                 Записатись безкоштовно
               </button>
-              <p>Натискаючи на кнопку я погоджуюсь</p>
-              <a href="#">з політикою конфіденційності</a>
+              <p class="form__agreement">Натискаючи на кнопку я погоджуюсь</p>
+              <a class="form__agreement" href="#"
+                >з політикою конфіденційності</a
+              >
             </form>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="/"><img src="./images/logo.svg" alt="Beauty Zone Logo" /></a>
-          <ul>
-            <li><a href="#about-us-section">Про нас</a></li>
-            <li><a href="#adventages-section">Чому ми</a></li>
-            <li><a href="#procedures-section">Наші процедури</a></li>
-            <li><a href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-            <li>
-              <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
-            </li>
-            <li>
-              <a
-                href="https://maps.app.goo.gl/8omLrJDBuHcWFYH97"
-                target="_blank"
-                >Україна, м. Київ, вул. Тараса Шевченка 5</a
-              >
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#"
-                ><svg width="32" height="32">
-                  <use href="./images/icons.svg#icon-phone"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><svg width="32" height="32">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><svg width="32" height="32">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-          </ul>
-          <p>Політика конфіденційності</p>
-          <p>&copy; 2022 Дані захищені</p>
-        </address>
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo-container">
+              <a class="footer__logo" href="/"
+                ><img
+                  class="footer__logo-image"
+                  src="./images/logo.svg"
+                  alt="Beauty Zone Logo"
+              /></a>
+            </div>
+            <ul class="footer__nav-links">
+              <li class="footer__item">
+                <a class="footer__link" href="#about-us-section">Про нас</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#adventages-section">Чому ми</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#procedures-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#contact-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="footer__contacts">
+            <div class="footer__contact-line">
+              <ul>
+                <li class="footer__item">
+                  <a class="footer__link" href="tel:+380960000007"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="mailto:beautyzone@gmail.com"
+                    >beautyzone@gmail.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://maps.app.goo.gl/8omLrJDBuHcWFYH97"
+                    target="_blank"
+                    >Україна, м. Київ, вул. Тараса Шевченка 5</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer__social-links">
+                <li>
+                  <a class="footer__social-link" href="#"
+                    ><svg width="32" height="32">
+                      <use href="./images/icons.svg#icon-phone"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a class="footer__social-link" href="#"
+                    ><svg width="32" height="32">
+                      <use href="./images/icons.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a class="footer__social-link" href="#"
+                    ><svg width="32" height="32">
+                      <use href="./images/icons.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__rights">
+              <p class="footer__privacy-policy">Політика конфіденційності</p>
+              <p class="footer__copy">&copy; 2022 Дані захищені</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

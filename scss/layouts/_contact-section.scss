@@ -1,0 +1,31 @@
+.contact-section {
+  padding-bottom: 96px;
+  &__map {
+    width: 605px;
+    height: 480px;
+    border-radius: 32px;
+    border: none;
+  }
+  &__container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
+  &__form-container {
+    background-color: var(--color-primary-dark);
+    border-radius: 32px;
+    max-width: 422px;
+    padding: 48px 56px;
+    background-image: url('../images/contact-section-background.svg');
+  }
+  &__form-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1;
+    text-align: center;
+    color: var(--color-primary-white);
+    max-width: 276px;
+    margin-bottom: 32px;
+  }
+}

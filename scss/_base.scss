@@ -9,6 +9,10 @@ html {
 body {
   background-color: var(--color-primary-white);
   margin: 0;
+  background-image: url('../images/body-background.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position-y: 1320px;
 }
 address {
   font-style: normal;

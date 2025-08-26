@@ -1,0 +1,89 @@
+.footer {
+  position: relative;
+  padding: 56px 100px;
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/footer-background.svg');
+  &__container {
+    display: flex;
+    gap: 24px;
+  }
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    gap: 24px;
+  }
+  &__contacts {
+    display: flex;
+    flex-grow: 1;
+    gap: 24px;
+  }
+  &__logo-container {
+    flex-grow: 1;
+  }
+  &__logo {
+    display: block;
+    width: fit-content;
+  }
+  &__logo-image {
+    width: 84px;
+  }
+  &__nav-links {
+    flex-grow: 1;
+  }
+  &__link {
+    text-decoration: none;
+    color: var(--color-primary-white);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    transition: color 0.2s;
+    &:hover {
+      color: var(--color-primary-blue);
+    }
+  }
+  &__item {
+    margin-bottom: 16px;
+  }
+  &__rights {
+    flex-grow: 1;
+  }
+  &__contact-line {
+    flex-grow: 1;
+  }
+  &__social-links {
+    display: flex;
+    gap: 24px;
+    fill: var(--color-primary-white);
+  }
+  &__social-link {
+    transition: fill 0.2s;
+    &:hover {
+      fill: var(--color-primary-blue);
+    }
+  }
+  &__privacy-policy {
+    margin-bottom: 16px;
+    color: var(--color-primary-white);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+  }
+  &__copy {
+    color: var(--color-secondary-grey);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1;
+  }
+  ::after {
+    content: '';
+    background-image: url('../images/vials.png');
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

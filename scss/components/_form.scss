@@ -1,0 +1,58 @@
+.form {
+  background-color: var(--color-primary-dark);
+  border-radius: 32px;
+  max-width: 422px;
+  padding: 48px 56px;
+  background-image: url('../images/contact-section-background.svg');
+  text-align: center;
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1;
+    text-align: center;
+    color: var(--color-primary-white);
+    max-width: 276px;
+    margin: 0 auto 32px;
+  }
+  &__input {
+    padding: 18px 32px;
+    border-radius: 32px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: transparent;
+    border: solid 1px var(--color-secondary-grey);
+    color: var(--color-primary-white);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1;
+    transition: background-color 0.2s, color 0.2s;
+    &::placeholder {
+      color: var(--color-primary-white);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 1;
+    }
+    &:focus {
+      outline: none;
+      background-color: var(--color-secondary-grey);
+      color: var(--color-primary-white);
+    }
+  }
+  &__button {
+    margin-bottom: 8px;
+    &:hover {
+      color: var(--color-primary-white);
+    }
+  }
+  &__agreement {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-secondary-grey);
+  }
+}
