@@ -6,6 +6,9 @@
   height: 456px;
   padding-bottom: 32px;
   padding-right: 77px;
+  @media screen and (max-width: $tablet) {
+    height: 416px;
+  }
   background-image: linear-gradient(
     180.05deg,
     rgba(1, 28, 68, 0) 48.53%,

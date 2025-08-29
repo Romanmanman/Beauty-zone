@@ -5,6 +5,12 @@
   line-height: 1;
   color: var(--color-primary-dark);
   margin-bottom: 48px;
+  @media screen and (max-width: $desktop) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
   &--centered {
     text-align: center;
   }

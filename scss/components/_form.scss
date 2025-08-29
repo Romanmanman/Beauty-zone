@@ -4,6 +4,10 @@
   max-width: 422px;
   padding: 48px 56px;
   text-align: center;
+  @media screen and (max-width: $tablet) {
+    max-width: 100%;
+    padding: 24px 42px;
+  }
   &__title {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -13,6 +17,9 @@
     color: var(--color-primary-white);
     max-width: 276px;
     margin: 0 auto 32px;
+    @media screen and (max-width: $tablet) {
+      margin: 0 auto 24px;
+    }
   }
   &__input {
     padding: 18px 32px;
@@ -26,6 +33,9 @@
     font-size: 13px;
     line-height: 1;
     transition: background-color 0.2s, color 0.2s;
+    @media screen and (max-width: $tablet) {
+      padding: 16px 24px;
+    }
     &::placeholder {
       color: var(--color-primary-white);
       font-family: 'Roboto', sans-serif;
@@ -41,7 +51,7 @@
   }
   &__button {
     margin-bottom: 8px;
-    &:hover {
+    hover {
       color: var(--color-primary-white);
     }
   }

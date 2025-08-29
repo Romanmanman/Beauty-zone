@@ -1,5 +1,8 @@
 .adventages-section {
   padding-bottom: 96px;
+  @media screen and (max-width: $desktop) {
+    padding-bottom: 40px;
+  }
   &__title {
     max-width: 450px;
     margin: 0 auto;
@@ -13,6 +16,10 @@
     max-width: 1060px;
     gap: 24px;
     justify-content: space-between;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      gap: 16px;
+    }
   }
   &__item {
     background-color: var(--color-primary-white);

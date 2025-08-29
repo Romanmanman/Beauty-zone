@@ -9,10 +9,13 @@ html {
 body {
   background-color: var(--color-primary-white);
   margin: 0;
-  background-image: url('../images/body-background.svg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position-y: 1320px;
+  // background-image: url('../images/body-background.svg');
+  // background-repeat: no-repeat;
+  // background-size: 100% auto;
+  // background-position-y: 1320px;
+  // @media screen and (max-width: $tablet) {
+  //   background-position-y: 800px;
+  // }
   &.is-open {
     overflow: hidden;
   }
@@ -40,6 +43,10 @@ ul {
   max-width: 1288px;
   margin: 0 auto;
   padding: 0 24px;
+  @media screen and (max-width: $desktop) {
+    max-width: 1280px;
+    padding: 0 20px;
+  }
 }
 img {
   display: block;

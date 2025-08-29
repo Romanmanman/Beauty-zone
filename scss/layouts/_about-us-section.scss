@@ -1,19 +1,36 @@
 .about-us-section {
   padding-bottom: 176px;
+  @media screen and (max-width: $desktop) {
+    padding-bottom: 104px;
+  }
   &__container {
     display: flex;
     gap: 24px;
     justify-content: space-between;
+    @media screen and (max-width: $tablet) {
+      gap: 0;
+    }
   }
   &__text {
     padding-top: 40px;
-    max-width: 710px;
+  }
+  &__stress {
+    font-weight: 600;
+    @media screen and (max-width: $tablet) {
+      font-weight: 700;
+    }
   }
   &__text &__title {
     margin-bottom: 40px;
+    @media screen and (max-width: $desktop) {
+      margin-bottom: 24px;
+    }
   }
   &__title {
     max-width: 530px;
+    @media screen and (max-width: $tablet) {
+      max-width: 264px;
+    }
   }
   &__description {
     font-family: 'Roboto', sans-serif;
@@ -22,6 +39,11 @@
     line-height: 1.7;
     color: var(--color-brand-dark);
     margin-bottom: 40px;
+    @media screen and (max-width: $tablet) {
+      font-size: 18px;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
   }
 
   &__images {
@@ -33,6 +55,10 @@
     gap: 40px;
     flex-direction: column;
     flex-grow: 1;
+    @media screen and (max-width: $tablet) {
+      min-width: 0;
+      height: auto;
+    }
   }
   &__image {
     border-radius: 50%;
@@ -41,13 +67,21 @@
     position: absolute;
     top: 0px;
     left: 0px;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
   &__after {
     position: absolute;
     bottom: 0px;
     right: 0px;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
   &__big-star {
+    width: 64px;
+    height: 64px;
     fill: var(--color-primary-dark);
     position: absolute;
     top: 295px;
@@ -56,6 +90,16 @@
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    @media screen and (max-width: $tablet) {
+      top: 320px;
+      width: 40px;
+      height: 40px;
+    }
+    @media screen and (max-width: $mobile) {
+      top: 380px;
+      width: 40px;
+      height: 40px;
+    }
   }
   &__middle-star {
     fill: var(--color-primary-blue);
@@ -67,6 +111,9 @@
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
   &__small-star {
     fill: var(--color-secondary-grey);
@@ -78,6 +125,9 @@
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
   @keyframes pulsar {
     0% {

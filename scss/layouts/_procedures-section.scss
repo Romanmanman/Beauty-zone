@@ -1,5 +1,8 @@
 .procedures-section {
   padding-bottom: 96px;
+  @media screen and (max-width: $desktop) {
+    padding-bottom: 40px;
+  }
   &__scroll-button {
     display: flex;
     align-items: center;
@@ -13,6 +16,9 @@
     fill: var(--color-primary-dark);
     cursor: pointer;
     transition: fill 0.2s, background-color 0.2s;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
     &:hover {
       background-color: var(--color-primary-blue);
       fill: var(--color-primary-white);

@@ -1,0 +1,10 @@
+.background-container {
+  background-image: url('../images/body-background.svg');
+  background-repeat: no-repeat;
+  background-position-y: 680px;
+  background-size: cover;
+  background-position-x: center;
+  @media screen and (max-width: $tablet) {
+    background-position-y: 320px;
+  }
+}

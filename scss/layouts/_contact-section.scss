@@ -1,15 +1,28 @@
 .contact-section {
   padding-bottom: 96px;
+  @media screen and (max-width: $tablet) {
+    padding-bottom: 0;
+  }
   &__map {
     width: 605px;
     height: 480px;
     border-radius: 32px;
     border: none;
+    @media screen and (max-width: $tablet) {
+      width: auto;
+      height: 230px;
+      border-radius: 0;
+      margin: 0px -20px;
+    }
   }
   &__container {
     display: flex;
     gap: 32px;
     justify-content: center;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column-reverse;
+      gap: 24px;
+    }
   }
   &__form {
     background-image: url('../images/contact-section-background.svg');

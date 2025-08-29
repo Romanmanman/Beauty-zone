@@ -6,6 +6,11 @@
   padding: 32px 100px;
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
+  @media screen and (max-width: $desktop) {
+    padding: 16px 20px;
+    background-color: transparent;
+    backdrop-filter: none;
+  }
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -15,10 +20,16 @@
   &__nav-links {
     display: flex;
     gap: 56px;
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
   }
   &__nav-icons {
     display: flex;
     gap: 32px;
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
   }
   &__link {
     display: block;
@@ -51,13 +62,33 @@
   }
   &__logo-img {
     width: 84px;
-    height: 42px;
+    height: auto;
+    @media screen and (max-width: $desktop) {
+      width: 57px;
+      height: auto;
+    }
   }
   &__icon-link {
     fill: var(--color-primary-dark);
     transition: filter 0.2s;
     &:hover {
       filter: drop-shadow(0 0 1px var(--color-primary-blue));
+    }
+  }
+  &__burger-button {
+    display: none;
+    @media screen and (max-width: $desktop) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      width: 24px;
+      height: 24px;
+      fill: var(--color-primary-white);
     }
   }
 }

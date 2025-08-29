@@ -3,29 +3,56 @@
   padding: 56px 100px;
   background-color: var(--color-primary-dark);
   background-image: url('../images/footer-background.svg');
+  @media screen and (max-width: $tablet) {
+    padding: 32px 0;
+  }
   &__container {
     display: flex;
     gap: 24px;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      gap: 0;
+    }
   }
   &__nav {
     display: flex;
     flex-grow: 1;
     gap: 24px;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      gap: 42px;
+    }
   }
   &__contacts {
     display: flex;
     flex-grow: 1;
     gap: 24px;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      gap: 16px;
+    }
   }
   &__logo-container {
+    display: block;
     flex-grow: 1;
+    @media screen and (max-width: $tablet) {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__logo {
-    display: block;
+    display: flex;
     width: fit-content;
+    @media screen and (max-width: $desktop) {
+      justify-content: center;
+    }
   }
   &__logo-image {
     width: 84px;
+    flex-shrink: 0;
+    @media screen and (max-width: $desktop) {
+      width: 57px;
+    }
   }
   &__nav-links {
     flex-grow: 1;
@@ -38,12 +65,16 @@
     font-size: 16px;
     line-height: 1;
     transition: color 0.2s;
+    overflow-wrap: anywhere;
     &:hover {
       color: var(--color-primary-blue);
     }
   }
   &__item {
     margin-bottom: 16px;
+    @media screen and (max-width: $desktop) {
+      text-align: center;
+    }
   }
   &__rights {
     flex-grow: 1;
@@ -55,6 +86,9 @@
     display: flex;
     gap: 24px;
     fill: var(--color-primary-white);
+    @media screen and (max-width: $tablet) {
+      justify-content: center;
+    }
   }
   &__social-link {
     transition: fill 0.2s;
@@ -69,6 +103,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
+    @media screen and (max-width: $tablet) {
+      text-align: center;
+      margin-bottom: 8px;
+    }
   }
   &__copy {
     color: var(--color-secondary-grey);
@@ -76,14 +114,21 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 1;
+    @media screen and (max-width: $tablet) {
+      text-align: center;
+    }
   }
   ::after {
     content: '';
     background-image: url('../images/vials.png');
+    background-repeat: no-repeat;
     width: 250px;
     height: 150px;
     position: absolute;
     bottom: 0;
     right: 0;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
 }
